@@ -1,0 +1,12 @@
+<main class="mainBody">
+  <app-step-selector
+    [step2Enabled]="state.isStep1Completed()"
+    [step3Enabled]="state.isStep2Completed()"
+  />
+  <router-outlet></router-outlet>
+  <app-car-image
+    *ngIf="state.isStep1Completed()"
+    [carCode]="state.getSummary().code"
+    [colorCode]="state.getSummary().color?.code"
+  ></app-car-image>
+</main>

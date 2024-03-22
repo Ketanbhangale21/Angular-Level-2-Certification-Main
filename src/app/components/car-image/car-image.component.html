@@ -1,0 +1,10 @@
+<img
+  *ngIf="carCode && colorCode"
+  [src]="
+    'https://interstate21.com/tesla-app/images/' +
+    carCode +
+    '/' +
+    colorCode +
+    '.jpg'
+  "
+/>

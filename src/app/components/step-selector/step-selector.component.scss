@@ -1,0 +1,19 @@
+.stepButtonContainer {
+    display: flex;
+    direction: row;
+    justify-content: center;
+    width: 100%;
+}
+
+.stepButton {
+    margin-left: 0;
+    margin-right: 0;
+    border: 1px solid grey;
+    border-radius: 0;
+    height: 60px;
+    flex: 0 0 33.333333%;
+}
+
+.active {
+    background-color: grey;
+}

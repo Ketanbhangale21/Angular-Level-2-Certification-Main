@@ -1,0 +1,28 @@
+<div class="stepButtonContainer">
+  <button
+    id="step1"
+    class="stepButton"
+    (click)="onStep(1)"
+    [ngClass]="{ active: router.url === '/step1' }"
+  >
+    Step 1
+  </button>
+  <button
+    id="step2"
+    class="stepButton"
+    (click)="onStep(2)"
+    [ngClass]="{ active: router.url === '/step2' }"
+    [disabled]="!step2Enabled"
+  >
+    Step 2
+  </button>
+  <button
+    id="step3"
+    class="stepButton"
+    (click)="onStep(3)"
+    [ngClass]="{ active: router.url === '/step3' }"
+    [disabled]="!step3Enabled"
+  >
+    Step 3
+  </button>
+</div>
