@@ -1,12 +1,14 @@
 form {
-    background-color: transparent;
-    border: 0;
+  background-color: transparent;
+  border: 0;
+  font-weight: bold;
 
-    select {
-        width: 200px;
-    }
+  select {
+    width: 200px;
+    font-weight: bold;
+  }
 
-    .singleLine {
-        display: block;
-    }
+  .singleLine {
+    display: block;
+  }
 }
